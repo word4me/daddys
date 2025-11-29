@@ -1112,19 +1112,19 @@ local themes = {
     },
 
     Midnight = {
-        ["Accent"] = Color3.fromRGB(179, 48, 48),
-    ["Window Background"] = Color3.fromRGB(30, 20, 20),
-    ["Window Border"] = Color3.fromRGB(60, 30, 30),
-    ["Tab Background"] = Color3.fromRGB(25, 15, 15),
-    ["Tab Border"] = Color3.fromRGB(55, 25, 25),
-    ["Tab Toggle Background"] = Color3.fromRGB(35, 20, 20),
-    ["Section Background"] = Color3.fromRGB(22, 12, 12),
-    ["Section Border"] = Color3.fromRGB(45, 20, 20),
-    ["Text"] = Color3.fromRGB(220, 180, 180),
-    ["Disabled Text"] = Color3.fromRGB(120, 80, 80),
-    ["Object Background"] = Color3.fromRGB(28, 18, 18),
-    ["Object Border"] = Color3.fromRGB(40, 25, 25),
-    ["Dropdown Option Background"] = Color3.fromRGB(24, 14, 14)
+         ["Accent"] = Color3.fromRGB(179, 48, 48),
+    ["Window Background"] = Color3.fromRGB(30, 30, 30),
+    ["Window Border"] = Color3.fromRGB(179, 48, 48),  -- Red outline
+    ["Tab Background"] = Color3.fromRGB(20, 20, 20),
+    ["Tab Border"] = Color3.fromRGB(179, 48, 48),  -- Red outline
+    ["Tab Toggle Background"] = Color3.fromRGB(28, 28, 28),
+    ["Section Background"] = Color3.fromRGB(18, 18, 18),
+    ["Section Border"] = Color3.fromRGB(179, 48, 48),  -- Red outline
+    ["Text"] = Color3.fromRGB(200, 200, 200),
+    ["Disabled Text"] = Color3.fromRGB(110, 110, 110),
+    ["Object Background"] = Color3.fromRGB(25, 25, 25),
+    ["Object Border"] = Color3.fromRGB(179, 48, 48),  -- Red outline
+    ["Dropdown Option Background"] = Color3.fromRGB(19, 19, 19)
     }
 }
 
