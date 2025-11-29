@@ -1112,19 +1112,19 @@ local themes = {
     },
 
     Midnight = {
-        ["Accent"] = Color3.fromRGB(100, 59, 154),
-        ["Window Background"] = Color3.fromRGB(30, 30, 36),
-        ["Window Border"] = Color3.fromRGB(45, 45, 49),
-        ["Tab Background"] = Color3.fromRGB(20, 20, 24),
-        ["Tab Border"] = Color3.fromRGB(45, 45, 55),
-        ["Tab Toggle Background"] = Color3.fromRGB(28, 28, 32),
-        ["Section Background"] = Color3.fromRGB(18, 18, 22),
-        ["Section Border"] = Color3.fromRGB(35, 35, 45),
-        ["Text"] = Color3.fromRGB(180, 180, 190),
-        ["Disabled Text"] = Color3.fromRGB(100, 100, 110),
-        ["Object Background"] = Color3.fromRGB(25, 25, 29),
-        ["Object Border"] = Color3.fromRGB(35, 35, 39),
-        ["Dropdown Option Background"] = Color3.fromRGB(19, 19, 23)
+        ["Accent"] = Color3.fromRGB(179, 48, 48),
+    ["Window Background"] = Color3.fromRGB(30, 20, 20),
+    ["Window Border"] = Color3.fromRGB(60, 30, 30),
+    ["Tab Background"] = Color3.fromRGB(25, 15, 15),
+    ["Tab Border"] = Color3.fromRGB(55, 25, 25),
+    ["Tab Toggle Background"] = Color3.fromRGB(35, 20, 20),
+    ["Section Background"] = Color3.fromRGB(22, 12, 12),
+    ["Section Border"] = Color3.fromRGB(45, 20, 20),
+    ["Text"] = Color3.fromRGB(220, 180, 180),
+    ["Disabled Text"] = Color3.fromRGB(120, 80, 80),
+    ["Object Background"] = Color3.fromRGB(28, 18, 18),
+    ["Object Border"] = Color3.fromRGB(40, 25, 25),
+    ["Dropdown Option Background"] = Color3.fromRGB(24, 14, 14)
     }
 }
 
@@ -1313,9 +1313,8 @@ function library:Close()
         self.holder.Visible = self.open
     end
 
-    if self.cursor then
-        self.cursor.Visible = self.open
-    end
+    
+    
 end
 
 function library:ChangeThemeOption(option, color)
@@ -2802,24 +2801,9 @@ function library:Load(options)
         self.extension = extension
     end
 
-    local cursor = utility.create("Triangle", {
-        Thickness = 6,
-        Color = Color3.fromRGB(255, 255, 255),
-        ZIndex = 1000
-    })
+   
 
-    self.cursor = cursor
-
-    services.InputService.MouseIconEnabled = false
-
-    utility.connect(services.RunService.RenderStepped, function()
-        if self.open then
-            local mousepos = services.InputService:GetMouseLocation()
-            cursor.PointA = mousepos
-            cursor.PointB = mousepos + Vector2.new(6, 12)
-            cursor.PointC = mousepos + Vector2.new(6, 12)
-        end
-    end)
+   
 
     local holder = utility.create("Square", {
         Transparency = 0,
