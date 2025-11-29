@@ -1095,11 +1095,11 @@ function utility.rgba(r, g, b, alpha)
 end
 
 local themes = {
-    Krypton = {
-    ["Accent"] = Color3.fromRGB(179, 48, 48),
-    ["Window Background"] = Color3.fromRGB(30, 20, 20),
-    ["Window Border"] = Color3.fromRGB(60, 30, 30),
-    ["Tab Background"] = Color3.fromRGB(25, 15, 15),
+    Default = {
+        ["Accent"] = Color3.fromRGB(179, 48, 48),
+        ["Window Background"] = Color3.fromRGB(30, 20, 20),
+        ["Window Border"] = Color3.fromRGB(60, 30, 30),
+        ["Tab Background"] = Color3.fromRGB(25, 15, 15),
     ["Tab Border"] = Color3.fromRGB(55, 25, 25),
     ["Tab Toggle Background"] = Color3.fromRGB(35, 20, 20),
     ["Section Background"] = Color3.fromRGB(22, 12, 12),
@@ -1109,7 +1109,7 @@ local themes = {
     ["Object Background"] = Color3.fromRGB(28, 18, 18),
     ["Object Border"] = Color3.fromRGB(40, 25, 25),
     ["Dropdown Option Background"] = Color3.fromRGB(24, 14, 14)
-},
+    },
 
     Midnight = {
         ["Accent"] = Color3.fromRGB(100, 59, 154),
