@@ -1426,9 +1426,7 @@ function library:Unload()
         self.holder:Remove()
     end
 
-    if self.cursor then
-        self.cursor:Remove()
-    end
+    
 
     if self.watermarkobject then
        self.watermarkobject:Remove() 
